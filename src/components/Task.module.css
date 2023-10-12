@@ -1,0 +1,80 @@
+.tasks, .done{
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+}
+
+.tasks p, .done p{
+  font-family: "Inter", sans-serif;
+  font-size: .875rem;
+  color: var(--gray-100);
+  flex: 1;
+  align-self: center;
+}
+
+.done p{
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+
+.tasks button, .done button{
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.tasks button:first-child{
+  min-width: 1.125rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  margin: 3.27px;
+}
+
+.done button:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-100);
+  min-width: 1.125rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  margin: 3.27px;
+  background-color: var(--purple-dark);
+}
+
+.tasks button:first-child:hover{
+  border-color: var(--blue-dark);
+  background-color: rgba(30, 111, 159, .4);
+}
+
+.done button:first-child:hover{
+  background-color: var(--purple);
+}
+
+.tasks button:last-child, .done button:last-child{
+  display: flex;
+  color: var(--gray-300);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.tasks button:last-child:hover, 
+.done button:last-child:hover{
+  color: var(--danger);
+  background-color: var(--gray-400 );
+}
+
+
